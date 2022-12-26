@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>お金のチェンジ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+</head>
+
+<body bgcolor="white">    
+
+<form name="myForm">
+どこの国のお金が欲しい？ 例）日本だったら「円」、韓国だったら「ウォン」って書いてください！
+<input list="currencies" id="currencyType1Box">
+<datalist id="currencies">
+  <option value="yen">
+  <option value="won">
+  <option value="usd">
+  <option value="cad">
+</datalist>
+<br/>    
+    
+どこの国のお金を人に預ける？ 例）日本だったら「円」、韓国だったら「ウォン」って書いてください！
+<input list="currencies" id="currencyType2Box">
+<br/>   
+<br/>     
+    
+レートを教えてください：
+ <br/>   
+    まずは<span id="currency1Symbol">_______</span>がいくらか書いてください
+<input type="number" id="currency1Box">
+<br/> 
+次は<span id="currency2Symbol">_______</span>がいくらか書いてください
+<input type="number" id="currency2Box">
+<br/>  
+<br/>  
+
+お母さんが預ける<span id="currency3Symbol"></span>はいくらですか？
+<input type="number" id="currency3Box">
+
+<div>
+<button id="convertButton">チェンジ</button>
+</div>
+    
+</form>
+    
+<div id="result">
+ 
+</div>
+
+<script type="text/javascript" src="script.js"></script>
+
+</body>
+</html>
