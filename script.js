@@ -20,10 +20,16 @@ function showCurrencySymbol(event){
     var currencySymbol1 = document.getElementById("currency1Symbol");
     var currencySymbol2 = document.getElementById("currency2Symbol");
     var currencySymbol3 = document.getElementById("currency3Symbol");
+    var currencySymbol4 = document.getElementById("currency4Symbol");
+    var currencySymbol5 = document.getElementById("currency5Symbol");
+    var currencySymbol6 = document.getElementById("currency6Symbol");
     
     currencySymbol1.innerHTML = document.getElementById("currencyType1Box").value;
-    currencySymbol2.innerHTML = document.getElementById("currencyType2Box").value;
+    currencySymbol2.innerHTML = document.getElementById("currencyType1Box").value;
     currencySymbol3.innerHTML = document.getElementById("currencyType2Box").value;
+    currencySymbol4.innerHTML = document.getElementById("currencyType2Box").value;
+    currencySymbol5.innerHTML = document.getElementById("currencyType2Box").value;
+    currencySymbol6.innerHTML = document.getElementById("currencyType2Box").value;
 }
 
 var convertButton = document.getElementById("convertButton");
@@ -34,5 +40,3 @@ currency1Symbol.onchange = showCurrencySymbol;
 
 var currency2Symbol = document.getElementById("currencyType2Box");
 currency2Symbol.onchange = showCurrencySymbol;
-
-
