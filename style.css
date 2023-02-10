@@ -1,0 +1,21 @@
+body {
+    padding: 8px;
+    max-width: 600px;
+    margin: 8px auto;
+    background:#FFF
+}
+
+.dropimage, button, .button, [type=submit] {
+    margin: 3em auto;
+    width: 8em;
+    display: block;
+}
+
+h1{
+    text-align: center;
+}
+
+form div {
+    margin: 32px 0;
+}
+
