@@ -4,7 +4,6 @@ function calculation(){
     var currency3 = document.getElementById("currency3Box").value;
     var currency4 = (currency3*currency1)/currency2;
     
-    
     return currency4 + document.getElementById("currencyType1Box").value;
 }
 
