@@ -4,11 +4,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+<link rel="stylesheet" href="style.css">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#82ff93">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 </head>
 
-<body bgcolor="white">    
-
+<body bgcolor="white">
+<div id="container"> 
+    
+    <h1>お金のチェンジ</h1> 
 <form name="myForm">
+<div>
 どこの国のお金が欲しい？ 例）日本だったら「円」、韓国だったら「ウォン」って書いてください！어느 나라의 돈을 원하십니까? 예를 들어 일본이라면 '엔', 한국이라면 '원'이라고 써주세요!
 <input list="currencies" id="currencyType1Box">
 <datalist id="currencies">
@@ -17,26 +28,32 @@
   <option value="usd">
   <option value="cad">
 </datalist>
-<br/>    
-    
+</div>
+
+<div>
 どこの国のお金を人に預ける？ 例）日本だったら「円」、韓国だったら「ウォン」って書いてください！어느 나라의 돈을 사람에게 맡겨? 예를 들어 일본이라면 '엔', 한국이라면 '원'이라고 써주세요!
 <input list="currencies" id="currencyType2Box">
-<br/>   
-<br/>     
+</div>
     
-レートを教えてください　환율을 말해주세요：
- <br/>   
-まずは<span id="currency1Symbol">_______</span>がいくらか書いてください　우선 <span id="currency2Symbol">_______</span>이 얼마든지 적어주세요
-<input type="number" id="currency1Box">
-<br/> 
-次は<span id="currency3Symbol">_______</span>がいくらか書いてください　다음에, <span id="currency4Symbol">_______</span>이 얼마인가 써주세요
-<input type="number" id="currency2Box">
-<br/>  
-<br/>  
+<div>    
+レートを教えてください　요율을 말해주세요：
+</div>
 
+<div>
+まずは<span id="currency1Symbol">_______</span>がいくらか書いてください。　우선 <span id="currency2Symbol">_______</span>이 얼마든지 적어주세요
+<input type="number" id="currency1Box">
+</div>
+
+<div>
+次は<span id="currency3Symbol">_______</span>がいくらか書いてください。　다음에, <span id="currency4Symbol">_______</span>이 얼마인가 써주세요
+<input type="number" id="currency2Box">
+</div>
+    
+<div>
 お母さんが預ける<span id="currency5Symbol">_______</span>はいくらですか？　엄마가 맡기는 <span id="currency6Symbol">_______</span>은 얼마입니까?
 <input type="number" id="currency3Box">
-
+</div>
+    
 <div>
 <button id="convertButton">チェンジ</button>
 </div>
@@ -48,6 +65,6 @@
 </div>
 
 <script type="text/javascript" src="script.js"></script>
-
+</div>
 </body>
 </html>
